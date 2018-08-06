@@ -191,23 +191,25 @@ function movieData(){
 }
 movieData();
 
-$(".submit").on("click", function() {
-   var userResultsArr = [];
+$(".submit").on("click", function(event) {
    event.preventDefault();
+   var userResultsArr = [];
+
    for(i=1; i<11; i++){
       var answer = $("#q" + i).val().slice(0,2);
       answer = parseInt(answer);
       userResultsArr.push(answer);
    };
-   console.log(userResultsArr);
-   return false;
+   console.log(userResultsArr)
+   
   var currentURL = window.location.origin;
-  $.post(currentURL + "/api/survey", userResultsArr, function(data){
-     return false;
+  $.post(currentURL + "/api/survey", userResultsArr) 
+  .then(function(data){
+    console.log("Adding..." + userResultsArr);
   })
 
 
-  
+
 })
 </script>
 

@@ -17,7 +17,11 @@ var moviesArray = [
    },
    {
       title: "It Follows",
-      results: [1, 3, 7, 3, 8, 7, 2, 1, 1, 8]
+      results: [1, 3, 6, 3, 8, 7, 2, 1, 1, 8]
+   },
+   {
+      title: "The Witch",
+      results: [ 1, 1, 4, 2, 8, 1, 1, 1, 1, 8 ]
    },
    {
       title: "Ip Man",
@@ -67,6 +71,14 @@ var moviesArray = [
       title: "22 Jump Street",
       results: [10, 10, 8, 10, 1, 7, 10, 1, 1, 1]
    },
+   {
+      title: "It Comes At Night",
+      results: [ 1, 3, 7, 1, 10, 1, 1, 1, 1, 1 ]
+   },
+   {
+      title: "Logan",
+      results: [ 1, 10, 10, 1, 5, 1, 3, 5, 1, 5 ]
+   }
 ];
 
 module.exports = moviesArray;

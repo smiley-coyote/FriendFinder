@@ -174,11 +174,29 @@
          </div>
       </div>
    </div>
+   <div class="modal fade" id="movieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Your movie recommendation is....</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body" id="movie-box">
+               
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
 
 </body>
 
 <script type="text/javascript">
-
+var timer;
 
 function movieData(){
    var currentURL = window.location.origin;
@@ -193,24 +211,48 @@ movieData();
 
 $(".submit").on("click", function(event) {
    event.preventDefault();
-   var userResultsArr = {userData:[]}
+   var userResultsArr = {
+      userData:[]
+      }
 
    for(i=1; i<11; i++){
       var answer = $("#q" + i).val().slice(0,2);
       answer = parseInt(answer);
       userResultsArr.userData.push(answer);
    };
-   console.log(userResultsArr)
    
-  var currentURL = window.location.origin;
-  $.post("/api/survey", userResultsArr) 
-  .then(function(data){
-    console.log("Adding..." + userResultsArr);
+   
+  
+  $.post("/api/survey", userResultsArr).then(function(response){
+     console.log(response);
+   
+   movieMagic();
   })
 
-
+ 
+ 
 
 })
+
+function movieMagic(){
+   $("#movie-box").html("");
+   var currentURL = window.location.origin;
+$.ajax({ url: currentURL + "/api/your-movie", method: "GET" })
+.done(function(movieResponse) {
+           console.log(movieResponse)
+           var title = $("<h1>" + movieResponse.title + "</h1>")
+           var img = $("<img src='" + movieResponse.poster + "' />")
+           var plot = $("<p>" + "Plot: " + movieResponse.plot + "</p>")
+           var score = $("<p>" + "Rotten Tomato Score: " + movieResponse.score + "</p>")
+         $("#movie-box").append(title)
+         $("#movie-box").append(img)
+         $("#movie-box").append(plot)
+         $("#movie-box").append(score)
+
+         $('#movieModal').modal('show')
+        })
+
+      }
 </script>
 
 </html>

@@ -8,12 +8,7 @@ var movieResponse = {
    plot: "",
    score: ""
 }
-var movieTest = {
-   title: "Jaws",
-   poster: "poster",
-   plot: "big shark eats people",
-   score: "90"
-}
+
 
 
 module.exports = function (app) {

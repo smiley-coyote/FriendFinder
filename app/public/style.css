@@ -1,0 +1,14 @@
+ .jumbotron {
+    margin-top: 10%;
+    opacity: .8;
+    width: 750px;
+    border: 10px solid rgb(133, 133, 133);
+ }
+ body {
+    background-image: url("images/CinemaBackground.jpg")
+ }
+
+ #survey {
+    background-color: rgb(202, 202, 202);
+    opacity: .8;
+ }

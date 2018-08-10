@@ -2,258 +2,300 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-   crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-   crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="style.css">
-   <title>Movie Finder - Survey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Movie Finder - Survey</title>
 </head>
 
 <body>
-   <div class="container" id="survey">
-      <div class="row">
-         <div class="col-md-12">
-            <h1 class="text-center">Movie Finder</h1>
-            <form>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">Are you looking for something funny?</label>
-                  <select class="form-control" id="q1">
-                     <option>1 (I want something totally serious)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (Make me laugh hysterically)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">What about action?</label>
-                  <select class="form-control" id="q2">
-                     <option>1 (No thrills for me)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (Give me lots of action!)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">Are you in the mood for some violence?</label>
-                  <select class="form-control" id="q3">
-                     <option>1 (No blood at all!)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (I want a gore-fest!)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">Are you looking for something light?</label>
-                  <select class="form-control" id="q4">
-                     <option>1 (I want something heavy that'll make me cry)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (I don't want to feel any emotions)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">How scared do you wanna be?</label>
-                  <select class="form-control" id="q5">
-                     <option>1 (Nothing scary)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (I brought an extra pair of pants)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">Are you in the mood for some romance?</label>
-                  <select class="form-control" id="q6">
-                     <option>1 (Ew! Nothing romantic please!)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (YAS QUEEN!)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">You want something uplifting?</label>
-                  <select class="form-control" id="q7">
-                     <option>1 (Bring me down)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (I've had a very rough day and need a feel good movie pronto!)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">How do you feel about technology in your movie?</label>
-                  <select class="form-control" id="q8">
-                     <option>1 (No robots, hackers, or techy stuff please)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (I want all the gadgets in my movie)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">You want something out of this world?</label>
-                  <select class="form-control" id="q9">
-                     <option>1 (Keep me on planet Earth please)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (Get me as far away from this planet as possible)</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="exampleFormControlSelect1">What about some fantasy/supernatural?</label>
-                  <select class="form-control" id="q10">
-                     <option>1 (No ghosts no goblins!)</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option selected="selected">5</option>
-                     <option>6</option>
-                     <option>7</option>
-                     <option>8</option>
-                     <option>9</option>
-                     <option>10 (Get me out of this reality)</option>
-                  </select>
-               </div>
-               <button type="submit" class="btn btn-primary submit">submit</button>
-            </form>
-         </div>
+  <div class="container" id="survey">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Movie Finder</h1>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Are you looking for something funny?</label>
+            <select class="form-control" id="q1">
+              <option>1 (I want something totally serious)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (Make me laugh hysterically)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">What about action?</label>
+            <select class="form-control" id="q2">
+              <option>1 (No thrills for me)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (Give me lots of action!)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Are you in the mood for some violence?</label>
+            <select class="form-control" id="q3">
+              <option>1 (No blood at all!)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (I want a gore-fest!)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Are you looking for something light?</label>
+            <select class="form-control" id="q4">
+              <option>1 (I want something heavy that'll make me cry)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (I don't want to feel any emotions)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">How scared do you wanna be?</label>
+            <select class="form-control" id="q5">
+              <option>1 (Nothing scary)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (I brought an extra pair of pants)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Are you in the mood for some romance?</label>
+            <select class="form-control" id="q6">
+              <option>1 (Ew! Nothing romantic please!)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (YAS QUEEN!)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">You want something uplifting?</label>
+            <select class="form-control" id="q7">
+              <option>1 (Bring me down)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (I've had a very rough day and need a feel good movie pronto!)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">How do you feel about technology in your movie?</label>
+            <select class="form-control" id="q8">
+              <option>1 (No robots, hackers, or techy stuff please)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (I want all the gadgets in my movie)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">You want something out of this world?</label>
+            <select class="form-control" id="q9">
+              <option>1 (Keep me on planet Earth please)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (Get me as far away from this planet as possible)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">What about some fantasy/supernatural?</label>
+            <select class="form-control" id="q10">
+              <option>1 (No ghosts no goblins!)</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option selected="selected">5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10 (Get me out of this reality)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#load-box">submit</button>
+        </form>
       </div>
-   </div>
-   <div class="modal fade" id="movieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog" role="document">
-           <div class="modal-content">
-             <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">Your movie recommendation is....</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true">&times;</span>
-               </button>
-             </div>
-             <div class="modal-body" id="movie-box">
-               
-             </div>
-             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-             </div>
-           </div>
-         </div>
-       </div>
+    </div>
+  </div>
+  <div class="modal fade" id="movieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your movie recommendation is....</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center d-flex justify-content-center" id="movie-box">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="load-box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Finding your movie...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center d-flex justify-content-center" id="movie-box">
+              <div class="loader"></div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
 
 </body>
+<style>
+    .loader {
+      margin: auto;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+    }
+    
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style>
 
 <script type="text/javascript">
-var timer;
+  var timer;
 
-function movieData(){
-   var currentURL = window.location.origin;
-   $.ajax({ url: currentURL + "/api/movies", method: "GET" })
-        .done(function (moviesArray) {
-      for(i=0;i<moviesArray.length;i++){
-         console.log(moviesArray[i].title)
-      }
-   })
-}
-movieData();
+  function movieData() {
+    var currentURL = window.location.origin;
+    $.ajax({ url: currentURL + "/api/movies", method: "GET" })
+      .done(function (moviesArray) {
+        for (i = 0; i < moviesArray.length; i++) {
+          console.log(moviesArray[i].title)
+        }
+      })
+  }
+  movieData();
 
-$(".submit").on("click", function(event) {
-   event.preventDefault();
-   var userResultsArr = {
-      userData:[]
-      }
+  $(".submit").on("click", function (event) {
+    event.preventDefault();
+    var userResultsArr = {
+      userData: []
+    }
 
-   for(i=1; i<11; i++){
-      var answer = $("#q" + i).val().slice(0,2);
+    for (i = 1; i < 11; i++) {
+      var answer = $("#q" + i).val().slice(0, 2);
       answer = parseInt(answer);
       userResultsArr.userData.push(answer);
-   };
-   
-   
-  
-  $.post("/api/survey", userResultsArr).then(function(response){
-     console.log(response);
-   
-   movieMagic();
+    };
+
+
+
+    $.post("/api/survey", userResultsArr).then(function (response) {
+      console.log(response);
+
+      timer = setInterval(movieMagic, 5000);
+    })
+
+
+
+
   })
 
- 
- 
+  function movieMagic() {
+    clearInterval(timer);
+    $('#load-box').modal('hide')
+    $("#movie-box").html("");
+    var currentURL = window.location.origin;
+    $.ajax({ url: currentURL + "/api/your-movie", method: "GET" })
+      .done(function (movieResponse) {
+        console.log(movieResponse)
+        var title = $("<h1>" + movieResponse.title + "</h1>")
+        var img = $("<img src='" + movieResponse.poster + "' />")
+        var plot = $("<p>" + "Plot: " + movieResponse.plot + "</p>")
+        var score = $("<p>" + "Rotten Tomato Score: " + movieResponse.score + "</p>")
+        $("#movie-box").append(title)
+        $("#movie-box").append(img)
+        $("#movie-box").append(plot)
+        $("#movie-box").append(score)
 
-})
+        $('#movieModal').modal('show')
+      })
 
-function movieMagic(){
-   $("#movie-box").html("");
-   var currentURL = window.location.origin;
-$.ajax({ url: currentURL + "/api/your-movie", method: "GET" })
-.done(function(movieResponse) {
-           console.log(movieResponse)
-           var title = $("<h1>" + movieResponse.title + "</h1>")
-           var img = $("<img src='" + movieResponse.poster + "' />")
-           var plot = $("<p>" + "Plot: " + movieResponse.plot + "</p>")
-           var score = $("<p>" + "Rotten Tomato Score: " + movieResponse.score + "</p>")
-         $("#movie-box").append(title)
-         $("#movie-box").append(img)
-         $("#movie-box").append(plot)
-         $("#movie-box").append(score)
-
-         $('#movieModal').modal('show')
-        })
-
-      }
+  }
 </script>
 
 </html>

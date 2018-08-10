@@ -237,7 +237,7 @@
     </style>
 
 <script type="text/javascript">
-  var timer;
+  
 
   function movieData() {
     var currentURL = window.location.origin;
@@ -267,7 +267,7 @@
     $.post("/api/survey", userResultsArr).then(function (response) {
       console.log(response);
 
-      timer = setInterval(movieMagic, 5000);
+      movieMagic();
     })
 
 
@@ -276,7 +276,6 @@
   })
 
   function movieMagic() {
-    clearInterval(timer);
     $('#load-box').modal('hide')
     $("#movie-box").html("");
     var currentURL = window.location.origin;

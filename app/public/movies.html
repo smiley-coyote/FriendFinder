@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <script src="https://code.jquery.com/jquery.js"></script>
+
+
+   <title>Document</title>
+</head>
+<body>
+   <div id="well-section"></div>
+
+</body>
+<script type="text/javascript">
+var firstMovie;
+function runPage(){
+   counter = 0;
+   $.get("/api/movies", function(data){
+      
+   })
+   $("#well-section").append()
+}
+  $.get("/api/movies", function(data) {
+     var movieResponse = data;
+      // for (var i = 0; i < movieResponse.length; i++) {
+      //    var wellSection = $("<div>");
+      //   wellSection.addClass("well");
+      //   wellSection.attr("id", "movie-well-" + i);
+      //   $("#well-section").append(wellSection);
+      //   $("#movie-well-" + i).append("<h2>" + movieResponse[i].title + "</h2>");
+      //   $("#movie-well-" + i).append("<img src='" + movieResponse[i].poster + "' />");
+      //   $("#movie-well-" + i).append("<p>" + movieResponse[i].plot + "</p>");
+      //    $("#movie-well-" + i).append("<p>Rotten Tomato Score: " + movieResponse[i].score + "</p>");
+
+         console.log();
+       
+
+
+
+
+
+
+        
+         
+      
+    });
+</script>
+</html>
